@@ -1,0 +1,12 @@
+{
+  "name": "state-pattern",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exec": "tsc index.ts --outDir build && node build/index.js"
+  },
+  "author": "VinGuler <vinguler@gmail.com>",
+  "license": "MIT"
+}
