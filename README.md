@@ -76,3 +76,8 @@ https://www.educative.io/edpresso/how-to-implement-a-breadth-first-search-in-pyt
 
 <i>Depth First Search</i><br>
 https://www.educative.io/edpresso/how-to-implement-depth-first-search-in-python
+
+<i>Using one of the above to count relations</i><br>
+In one of the questions I faced, I needed to count groups of relations between nodes.
+I.e. if node 'A' is related to 'B', 'B' relates to 'C', but 'D' relates to now one, we have 2 groups.
+Used bfs/dfs to get all the related nodes, and checked if any of the nodes is already a parent of a group.
