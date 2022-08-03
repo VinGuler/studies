@@ -1,4 +1,23 @@
 /**
+ * Insert Function
+ * @description Inserts an elements in the given array at index
+ * @param {number} i
+ * @param {number} j
+ * @param {Array} arr
+ */
+Array.prototype.insert = function (index, el) {
+  let temp = el
+  while (this[index] !== undefined) {
+    const current = this[index]
+    this[index] = temp
+    temp = current
+    index++
+  }
+  this.push(temp)
+  return this
+}
+
+/**
  * Swap Function
  * @description Swaps the elements in the given array ( i <-> j )
  * @param {number} i
@@ -185,6 +204,12 @@ function getArray() {
 
 function test() {
   let arr = getArray()
+  console.log('before insertion', arr)
+  arr.insert(2, 9)
+  console.log('after insertion', arr)
+  console.log('----------------')
+
+  arr = getArray()
   console.log('not sorted', arr)
   bubble_sort(arr)
   console.log('bubble_sort', arr)
