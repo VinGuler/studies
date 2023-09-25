@@ -86,5 +86,8 @@ function dfs(graph, node_name, visited = {}) {
   return all_related_nodes
 }
 
+const path = []
+const maze = [[0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0]]
+
 const res = count_relations(graph)
 console.log('res', res)
